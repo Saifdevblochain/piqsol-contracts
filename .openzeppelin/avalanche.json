@@ -1,0 +1,221 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [],
+  "impls": {
+    "bf4bf86906197ebcb06f389911ab2dbd0c584c382c300401ee37672e07f18711": {
+      "address": "0x26D8DD926BF1444654Ce31Aa0d8EE455f845DC5b",
+      "txHash": "0x2148a50cb680004327a92b231410103a703c131d1f965585046b103d33a282bf",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:909",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:914"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC721HolderUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1593"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1425"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1447"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1525"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1260"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:1388"
+          },
+          {
+            "label": "marketPlaceOwner",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_address",
+            "contract": "PiqsolRentalMarketplace",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:2442"
+          },
+          {
+            "label": "LentNFT_CollateralFeeForSale",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_array(t_struct(Lending)15687_storage)dyn_storage",
+            "contract": "PiqsolRentalMarketplace",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:2472"
+          },
+          {
+            "label": "LentActiveItems",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "contract": "PiqsolRentalMarketplace",
+            "src": "contracts/Nft-marketplace-contracts/Upgradable-Piqsol_rentalMarketplace.sol:2473"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Lending)15687_storage)dyn_storage": {
+            "label": "struct PiqsolRentalMarketplace.Lending[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Lending)15687_storage": {
+            "label": "struct PiqsolRentalMarketplace.Lending",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "renter",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "nftContract",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "pricePerDay",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "collateralFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "collateralReturnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "startDateUNIX",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "endDateUNIX",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "expires",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "isRented",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
